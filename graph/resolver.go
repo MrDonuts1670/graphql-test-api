@@ -4,4 +4,8 @@ package graph
 //
 // It serves as dependency injection for your app, add any dependencies you require here.
 
-type Resolver struct{}
+import "github.com/junjun-1345/graphql-test-api/graph/model"
+
+type Resolver struct {
+	todos []*model.Todo
+}
